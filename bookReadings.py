@@ -14,7 +14,7 @@ print "\nDay 1: pg. %d to pg. %d" % (pagesRead + 1, pagesRead + readingAmount)
 place = pagesRead + readingAmount + 1
 
 for i in range(howManyReadings - 2):
-	print "\nDay %d: pg. %d to pg. %d" % (i + 2, place + 1, place + readingAmount)
-	place = place + readingAmount
+	print "\nDay %d: pg. %d to pg. %d" % (i + 2, place, place + readingAmount)
+	place = place + 1 + readingAmount
 
 print "\nDay %d: pg. %d to pg. %d" % (howManyReadings, place, pagesInBook)
